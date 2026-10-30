@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+
+   <main>
+     <h1>bienvenido a Vet Turnos</h1>
+    
+       <form id="formulario">
+         <label>Tipo de mascota 
+            <select id="tipo">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>  
+            </select>
+         </label>    
+         <label>Nombre de la mascota
+            <input type="text" id="nombre" required placeholder="Ingrese el nombre de la mascota">
+            </label>    
+         <label>Peso (kg) de la mascota   
+            <input type="text" id="peso" required placeholder="Ingrese el peso de la mascota" step="0.2">
+            </label>
+            <button type="submit">Registrar</button>
+            <div id="mensaje"></div>
+         </form>
+
+         <ul id="turnos"></ul>
+     </main> 
+     
+     <script src="./programa.js"></script>
+</body>
+</html>

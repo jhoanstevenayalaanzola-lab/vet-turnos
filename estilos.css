@@ -1,0 +1,39 @@
+:root {
+    --verde: #0e660e;
+    --claro: #ffffffe9;
+    --linea: #e0e0e0;
+    --rojo: #ff0000;
+}
+
+body {
+    font-family: system-ui,sans-serif;
+    background-color: #f4f7f1;
+    color: #1b2418;
+    margin: 0;
+    padding: 20px;
+}
+
+main { max-width: 800px; margin: 0 auto;}
+
+form {
+    background: #fff;
+    border: 1px solid var(--linea);
+    border-radius: 10px;
+    padding: 14px;
+    display: grid;
+    gap: 10px;
+
+}
+
+label { display: grid; gap: 4px; font-size: 14px; font-weight: 600; }
+input, select { padding: 8px; border: 1px solid var(--linea); border-radius: 4px; font-size: 14px; }
+button {  background: var(--verde); color: #fff; border: 0; padding: 10px; border-radius: 6px;  font-weight: 700; cursor: pointer; }
+
+#mensaje { min-height: 20px; font-size: 14px; font-weight: 600; }
+#mensaje.error { color: var(--rojo); }
+#mensaje.ok { color: var(--verde); }
+
+#lista { list-style: none; padding: 0; display: grid; gap: 10px; margin: 14px 0 0; }
+.paciente { background: #fff; border-left: 4px solid var(--verde); border-radius: 10px; padding: 10px 12px; font-size: 14px; display: grid; gap: 4px; }
+.paciente small {  color: #536050; display: block; margin-top: 2px; }
+#total { font-weight: 700; margin-top: 12px; }
